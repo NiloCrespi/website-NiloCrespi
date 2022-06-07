@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+body {
+    background-color: rgb(236, 223, 240);
+}
+
+        /* HEADER */
+
+.navbar-brand h1 {
+    text-align: center;
+    font-family: "Ink Highlight";
+    color: rgb(152, 79, 79);
+    transform: scale(1, 1);
+}
+
+@font-face {
+    font-family: Ink-Highlight;
+    src: url(./fonts/Ink-Highlight.ttf);
+}    
+
+.navbar-brand h1:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 500ms;
+}
+
+        /* INDEX */
+
+.card {
+    background-color: rgb(236, 223, 240);
+    border: none;
+}
+
+.carousel-caption h3 {
+    font-size: 2.5vw;
+}
+
+.carousel-caption p {
+    font-size: 1.5vw;
+}
+
+.carousel-item img {
+    opacity: 0.7;
+}
+
+.carousel-item img:hover {
+    opacity: 0.8;
+}
+    
+    /* CONTACTO */
+
+.tablaContacto img {
+    width: 100px;
+    height: 100px;
+}
+
+.tablaContacto img:hover {
+    width: 110px;
+    height: 110px;
+}
+
+    /* FOOTER */
+
+#animacionLp {
+    grid-area: imgFoot;
+    width: auto;
+    height: 150px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: animacionFooter;
+    animation-duration: 10s;
+    animation-timing-function:linear;
+    animation-delay: 0;
+    animation-iteration-count:infinite;
+}
+
+@keyframes animacionFooter {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
